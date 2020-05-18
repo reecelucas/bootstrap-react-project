@@ -33,13 +33,7 @@ export default async (dir: string, framework: Framework) => {
     }
 
     await exec(
-      [
-        ...installCommand,
-        ...common,
-        ...testing,
-        ...linting,
-        ...gatsby,
-      ],
+      [...installCommand, ...common, ...testing, ...linting, ...gatsby],
     );
   } catch (error) {
     throw error;
