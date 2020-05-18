@@ -12,7 +12,7 @@ git clone git@github.com:reecelucas/bootstrap-react-project.git
 deno install --unstable --allow-read --allow-write --allow-run --allow-net --name bootstrap_react_project bootstrap-react-project/cli.ts
 ```
 
-See <https://deno.land/manual/tools/script_installer#script-installer> for more details about installing executable scripts with `Deno`.
+See <https://deno.land/manual/tools/script_installer#script-installer> for more details about installing executable scripts.
 
 You can now run `bootstrap_react_project` at the root of a new project. The script will identify the framework used and will generate the required configuration files and install dependencies. See [what it does](#what-it-does) for more details.
 
@@ -68,7 +68,7 @@ bootstrap_react_project
 
 - Adds a `jest.config.js` file to the root directory, along with required tansformers and mocks. Extends the recommended config ([gatsby](https://www.gatsbyjs.org/docs/unit-testing/#2-creating-a-configuration-file-for-jest), [next](https://github.com/zeit/next.js/tree/canary/examples/with-jest)) and enables [@testing-library/react](https://github.com/testing-library/react-testing-library) and [@testing-library/jest-dom](https://github.com/testing-library/jest-dom).
 - Adds a `test` script to the [package.json](./helpers/modifyPackageJson.ts) file.
-- Adds a `.eslintrc.json` file to the root directory. The configuration uses [eslint-config-react-app](https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app).
+- Adds a `.eslintrc.json` file to the root directory, using [eslint-config-react-app](https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app).
 - Changes `js` and `jsx` file extensions to `ts` and `tsx`.
 
 ### Next
