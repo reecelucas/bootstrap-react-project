@@ -1,4 +1,4 @@
-export const common = ["prettier", "husky"];
+export const common = ["prettier@2.x", "husky@4.x"];
 export const testing = [
   "jest@26.x",
   "babel-jest@26.x",
