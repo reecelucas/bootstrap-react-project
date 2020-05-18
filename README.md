@@ -12,7 +12,7 @@ git clone git@github.com:reecelucas/bootstrap-react-project.git
 deno install --unstable --allow-read --allow-write --allow-run --allow-net --name bootstrap_react_project bootstrap-react-project/cli.ts
 ```
 
-See <https://deno.land/manual/tools/script_installer#script-installer> for more details about installing executable scripts with `Deno`.
+See <https://deno.land/manual/tools/script_installer#script-installer> for more details about installing executable scripts.
 
 You can now run `bootstrap_react_project` at the root of a new project. The script will identify the framework used and will generate the required configuration files and install dependencies. See [what it does](#what-it-does) for more details.
 
