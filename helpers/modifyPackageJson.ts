@@ -7,7 +7,7 @@ import { Framework, PackageJson } from "../types.ts";
 export default async (
   dir: string,
   packageJson: PackageJson,
-  framework: Framework,
+  framework: Framework
 ) => {
   try {
     const useYarn = await usesYarn(dir);
@@ -27,7 +27,6 @@ export default async (
       bugs: {
         url: `https://github.com/reecelucas/${projectName}/issues`,
       },
-      homepage: `https://github.com/reecelucas/${projectName}#readme`,
       scripts: {
         ...packageJson.scripts,
         ...(includeTestScript ? { test: "jest --passWithNoTests" } : {}),
@@ -36,8 +35,7 @@ export default async (
       },
       husky: {
         hooks: {
-          "pre-commit":
-            `${command} lint && ${command} format && ${command} test`,
+          "pre-commit": `${command} lint && ${command} format && ${command} test`,
         },
       },
     };

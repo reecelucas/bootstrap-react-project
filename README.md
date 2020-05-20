@@ -46,7 +46,6 @@ bootstrap_react_project
 
 ## What it does
 
-
 ### All Frameworks
 
 - Adds a [.editorconfig](./configs/common/.editorconfig) file to the root directory.
@@ -59,7 +58,6 @@ bootstrap_react_project
   - `license`
   - `repository`
   - `bugs`
-  - `homepage`
 - Adds `lint` and `format` scripts to the [package.json](./helpers/modifyPackageJson.ts) file.
 - Adds a `pre-commit` hook using [husky](https://github.com/typicode/husky).
 - Installs required [dependencies](./dependencies.ts).
